@@ -30,11 +30,11 @@ body
 {
     0%
     {
-        transform: perspective(1000px) rotateX(0deg) rotate(0deg);
+        transform: perspective(1000px) rotateX(0deg) rotate(5deg);
     }
     100%
     {
-        transform: perspective(1000px) rotateX(360deg) rotate(00deg);
+        transform: perspective(1000px) rotateX(360deg) rotate(5deg);
     }
 }
 .container .box span
