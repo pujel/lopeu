@@ -25,16 +25,25 @@ body
 {
     transform-style: preserve-3d;
     animation: animate 15s linear infinite;
+
+    animation-play-state: running;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container .box:hover
+{
+    animation-play-state: paused;
 }
 @keyframes animate
 {
     0%
     {
-        transform: perspective(1000px) rotateX(0deg) rotate(5deg);
+        transform: perspective(1000px) rotateX(0deg) rotate(0deg);
     }
     100%
     {
-        transform: perspective(1000px) rotateX(360deg) rotate(5deg);
+        transform: perspective(1000px) rotateX(360deg) rotate(00deg);
     }
 }
 .container .box span
